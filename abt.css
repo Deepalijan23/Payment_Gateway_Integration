@@ -1,0 +1,121 @@
+body {
+    background-image: url("bg.jpg");
+    color: white;
+  }
+  body:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0.7, 0.5, 0.1, 0.1);
+    pointer-events: none;
+    background-blend-mode: darken;
+    z-index: -1;
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #a00536;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1em;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #a00536;
+  }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #a00536;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+    color: white;
+  }
+  .header-text {
+    color: white;
+    margin-left: 30%;
+    margin-top: 20%;
+  }
+  #about {
+    color: rgb(0, 0, 0);
+  }
+  hr {
+    height: 1px;
+  }
+  img {
+    height: 300px;
+  }
+  #about {
+    background-image: url("backg.jpg");
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container h1 {
+    justify-content: center;
+    margin-left: 482px;
+  }
+  .about-col-1 img {
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+  }
+  .about-col-3 img {
+    border-radius: 15px;
+    height: -15px;
+    
+  }
+  .aa {
+    border: solid 4px rgb(30, 78, 30);
+    display: inline-block;
+    border-radius: 20px;
+  }
+  .aa:hover {
+    border: solid 6px #a00536;
+  }
+  hr {
+    margin: 1rem 0;
+    color: inherit;
+    height: 19px;
+    border: 0;
+    border-top: 9px solid;
+    opacity: 1.25;
+  }
+  .about-col-2 h2 {
+    color: rgb(30, 78, 30);
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+  .a {
+    color: #5f3438;
+    margin-top: 13px;
+    margin-bottom: -1.5rem;
+  }
+  h2:hover {
+    color: #a00536;
+  }
